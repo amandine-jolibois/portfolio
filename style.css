@@ -112,6 +112,15 @@ footer
 }
 
 @media only screen and (max-device-width: 1600px) {
+  iframe
+  {
+    background-attachment: fixed;
+    max-height: 300px;
+    max-width: 300px;
+  }
+}
+
+@media only screen and (max-device-width: 1600px) {
   .containerPres
   {
     background-attachment: fixed;
