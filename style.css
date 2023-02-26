@@ -3,7 +3,6 @@ body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
-  overflow: auto;
 }
 
 .navBar a
@@ -104,10 +103,11 @@ footer
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .BandeProjets
+  .BandeProjets, .container
   {
     background-attachment: scroll;
     min-height: 250px;
+    overflow: hidden;
   }
 }
 
