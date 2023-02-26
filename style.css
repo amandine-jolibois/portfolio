@@ -106,7 +106,7 @@ footer
 @media only screen and (max-device-width: 1600px) {
   .BandeProjets
   {
-    background-attachment: scroll;
+    background-attachment: fixed;
     min-height: 250px;
   }
 }
