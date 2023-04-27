@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AppCoach | Jolibois Amandine</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="Images/favicon.ico" type="images/x-icon" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
+    <title>AppCoach | Jolibois Amandine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class=notranslate>
+
+        <div class="BandeProjetsAppCoach w3-display-container w3-opacity-min" id="projets">
+          <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide w3-center NomProjet"> AppCoach </span>
+          </div>
+      </div>
 
 <!-- Navbar (sit on top) -->
-<div class=navBar>
-<div class="w3-top">
+<div class="w3-top navbar">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html#accueil" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Accueil</a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Accueil</a>
     <a href="BtsSio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BTS SIO</a>
     <a href="index.html#apropos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> A propos</a>
     <a href="index.html#projets" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Projets</a>
@@ -28,53 +34,49 @@
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html#accueil" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home"></i> Acceuil</a>
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home"></i> Acceuil</a>
     <a href="BtsSio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> BTS SIO</a>
     <a href="index.html#apropos" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> A propos</a>
-    <a href="index.html#projets" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Projets</a>
+    <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Projets</a>
     <a href="VeilleTechnologique.html" class="w3-bar-item w3-button " onclick="toggleFunction()"><i class="fa fa-cloud"></i> Veille Technologique</a>
     <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contact</a>
   </div>
 </div>
+
+<br><br>
+
+<div class="w3-content w3-container" id="Presentation">
+
+<table>
+  <tr>
+      <td><img src="Images/AppCoach/AppCoach_accueil.png" style="width:100%" class="w3-center" alt="AppCoach"></td>
+      <td>                                                                           </td>
+      <td align="center">AppCoach est une application Android qui a pour but de calculer l'IMG - <span class="couleurLettre">I</span>ndice de <span class="couleurLettre">M</span>asse <span class="couleurLettre">G</span>rasse, en fonction de notre âge, sexe, poids et taille et indique notre corpulence (trop maigre, parfait ou surpoids).
+        <br><br>L'application utilise Xamarin sur Visual studio 2019 codé en C#.</td>
+  </tr>
+
+  <tr>
+      <td align="center">Interface graphique</td>
+  </tr>
+
+</table>
+
+<br>
+
+<button class="btplus w3-button w3-section w3-right" onclick="location.href='https:/\/amandine-jolibois.vercel.app/app-coach/mission-1-interface-graphique/'"> <i class="fa fa-search"></i> Comptes rendus</button>
 </div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="containerPres w3-padding-64" id="accueilPres" >
-    <div class="w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <h1><span id="type"></span></h1>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<script>
-    var typed=new Typed("#type", {
-        strings : ["AppCoach"],
-        typeSpeed:150,
-        backSpeed:150,
-        loop:true
-    })
-</script>
-
-<div class="w3-content w3-container w3-padding-64" id="Presentation">
-    <h3 class="w3-center">À propos de moi</h3>
-    <p>Application mobile</p>
-</div>
-
+<br>
 
 <!-- Footer -->
-<footer class="w3-center w3-padding-32">
-    <a href="#accueilPres" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de Page</a>
-    <div class="w3-xlarge w3-section lien">
-      <a href="https://www.linkedin.com/in/amandine-jolibois/"><i class="ptitIconf fa fa-linkedin"></i></a>
-      <a href="https://github.com/amandine-jolibois"><i class="ptitIconf fa fa-github"></i></a>
-      <a href="https://www.instagram.com/amanloe.jlb/?next=%2F&hl=fr"><i class="ptitIconf fa fa-instagram"></i></a>
-    </div>
-    <p class="PoweredBy">Réalisé par JOLIBOIS Amandine</p>
-    <p>Copyright © 2023 Tous droits réservés</p>
-  </footer>
+<footer class="w3-center w3-padding-small">
+  <a href="#projets" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de Page</a>
+  <div class="w3-xlarge w3-section lien">
+    <a href="https://www.linkedin.com/in/amandine-jolibois/"><i class="ptitIconf fa fa-linkedin"></i></a>
+    <a href="https://github.com/amandine-jolibois"><i class="ptitIconf fa fa-github"></i></a>
+  </div>
+  <p class="PoweredBy">Réalisé par JOLIBOIS Amandine</p>
+  <p>Copyright © 2023 Tous droits réservés</p>
+</footer>
  
 <script>
 // Modal Image Gallery
@@ -90,7 +92,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + "w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
@@ -109,4 +111,3 @@ function toggleFunction() {
 
 </body>
 </html>
-

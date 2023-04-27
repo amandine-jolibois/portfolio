@@ -1,23 +1,198 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h2,h3,h4,h5,h6,span {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
 }
 
-.navBar a
+p, td 
 {
-  float: left;
-  padding: 12px;
-  color: #777;
-  text-decoration: none;
-  font-size: 17px;
+  font-size: medium;
+  line-height: 1.8;
+}
+
+/* Logo de fond */
+.bgimg-1 {
+  background-image: url('Images/fond_accueil.jpg');
+  height: 100%!important;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Portfolio */
+.BandeProjets
+ {
+  background-image: url("Images/Projets.jpg");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsSniffer
+ {
+  background-image: url("Images/SnifferMac/baniere.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+
+.BandeProjetsAppCoach
+{
+  background-image: url("Images/baniere/Redimansisoner/appcoachBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsBanque
+{
+  background-image: url("Images/baniere/Redimansisoner/SioBanqueBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsFranceMobilier
+{
+  background-image: url("Images/baniere/Redimansisoner/FranceMobilierBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsGestionProjet
+{
+  background-image: url("Images/baniere/Redimansisoner/GestionprojetBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsLaFleur
+{
+  background-image: url("Images/baniere/Redimansisoner/LaFleurBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsLinuxApache
+{
+  background-image: url("Images/baniere/Redimansisoner/SioShopBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsPuissance4
+{
+  background-image: url("Images/baniere/Redimansisoner/Puisssance4Ban.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsRestoWeb
+{
+  background-image: url("Images/baniere/Redimansisoner/RestoWebBan.png");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsBTS
+ {
+  background-image: url("Images/BTSSIO/BaniereBTS.jpg");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.BandeProjetsVeille
+ {
+  background-image: url("Images/La-veille-technologique_copie.jpg");
+  height: 100px!important;
+  align-items: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .BandeProjets {
+    background-attachment: scroll;
+    min-height: 250px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-device-width: 1600px) {
+  iframe
+  {
+    background-attachment: fixed;
+    min-height: 300px;
+    min-width: 300px;
+  }
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .BandeProjetsSniffer, .BandeProjetsAppCoach, .BandeProjetsBTS, .BandeProjetsDocker, .BandeProjetsFranceMobilier, .BandeProjetsGestionProjet, .BandeProjetsGLPI, .BandeProjetsLaFleur, .BandeProjetsLinuxApache, .BandeProjetsPuissance4, .BandeProjetsRestoWeb, .BandeProjetsSauvegarde, .BandeProjetsBanque, .BandeProjetsVeille
+  {
+    background-attachment: fixed;
+    min-height: 200px;
+    overflow: hidden;
+    opacity: 1;
+  }
 }
 
 .w3-button:hover {
   border-radius: 25px!important;
   color: white!important;
   background-color: #B4E4CC!important;
+}
+
+.navbar a {
+float: left;
+  color: #73ae90;
+  text-decoration: none;
+  font-size: 17px;
+}
+  .couleur
+{
+    background-color: #B4E4CC;
+}
+
+.couleurLettre
+{
+  color: #73ae90;
+}
+
+.NomProjet{
+  height: 100%;
+  color: white;
+  font-weight: bold;
+  background-color: #B4E4CC;
+  border-radius: 13px;
 }
 
 .PoweredBy
@@ -46,6 +221,31 @@ footer
   color: white;
 }
 
+.btplus
+{
+  background-color: #B4E4CC;
+  color: white;
+  border-radius: 21px;
+  font-size: 15px;
+}
+
+.btplus:hover
+{
+  color: black!important;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor:  pointer;
+  outline: none;
+  border:  0;
+  background: transparent;
+  width: 13rem;
+  height: auto;
+}
+
+
 .ptitIcon:hover
 {
   color: #B4E4CC!important;
@@ -62,13 +262,11 @@ footer
 
 }
 
-/*Create a Parallax Effect
-.bgimg-1, .BandeProje, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+#contact img
+{
+  height: 200px;
+  width: 200px;
+}
 
 .imgProjets img
 {
@@ -83,158 +281,8 @@ footer
   object-fit: cover;
 }
 
-#contact img
-{
-  height: 200px;
-  width: 200px;
-}
-
-/* Portfolio */
-.BandeProjets {
-  background-image: url("Images/Projets.jpg");
-  height: 100px!important;
-  align-items: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .BandeProjets, .container
-  {
-    background-attachment: scroll;
-    min-height: 250px;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (max-device-width: 1600px) {
-  iframe
-  {
-    background-attachment: fixed;
-    min-height: 300px;
-    min-width: 300px;
-  }
-}
-
-@media only screen and (max-device-width: 1600px) {
-  .containerPres
-  {
-    background-attachment: fixed;
-    min-height: 200px;
-  }
-}
-
-button {
-    position: relative;
-    display: inline-block;
-    cursor:  pointer;
-    outline: none;
-    border:  0;
-    background: transparent;
-    width: 13rem;
-    height: auto;
-}
-
-button .circle {
-    transition: all 0.45s cubic-bezier(0.665, 0, 0.076, 1);
-    position:  relative;
-    display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #B4E4CC;
-    border-radius: 1.625rem;
-}
-
-button .arrow_icon {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-}
-
-button .arrow_icon::before {
-    position: absolute;
-    content: "";
-    top: -0.25rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top : 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-}
-
-button .button_text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    inset: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-button:hover .circle {
-    width: 100%;
-}
-
-button:hover .arrow_icon {
-    background: #fff;
-    transform: translate(0.5rem, 0);
-}
-
-.couleur
-{
-    background-color: #B4E4CC;
-}
-
-.container .text
-{
-    position: relative;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.container
-{
-    background: url(Images/fond_accueil.jpg);
-    height: 100%!important;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.containerPres
-{
-  background-image: url(Images/Remplace.png);
-  height: 100px!important;
-  align-items: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: white;
-}
-
   /* width */
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 15px;
   }
   
@@ -254,3 +302,39 @@ button:hover .arrow_icon {
   ::-webkit-scrollbar-thumb:hover {
     background: #b4e4ccad; 
   }
+
+  .superposition-simple {
+    position: relative;
+    width: 40%;
+   }
+   .superposition-simple .image-originale {
+    display: block;
+    width: 40%;
+   }
+   .superposition-simple .texte-original {
+    color: black;
+    font-size: 17px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+   }
+   .superposition-simple .texte-hover {
+    position: absolute;
+    top: 0;
+    height: 60%;
+    width: 40%;
+    opacity: 0;
+   }
+   .superposition-simple:hover .texte-hover {
+    opacity: 1;
+   }
+
+   .superposition-simple:hover .image-originale {
+    opacity: 0.5;
+   }
+   
+   
+
+

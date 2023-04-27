@@ -1,80 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>GLPI | Jolibois Amandine</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="Images/favicon.ico" type="images/x-icon" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
+    <title>GLPI | Jolibois Amandine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class=notranslate>
+
+        <div class="BandeProjetsGLPI w3-display-container w3-opacity-min" id="projets">
+          <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-white w3-wide w3-center NomProjet"> GLPI </span>
+          </div>
+      </div>
 
 <!-- Navbar (sit on top) -->
-<div class=navBar>
-<div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="index.html#accueil" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Accueil</a>
-        <a href="BtsSio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BTS SIO</a>
-        <a href="index.html#apropos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> A propos</a>
-        <a href="index.html#projets" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Projets</a>
-        <a href="VeilleTechnologique.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cloud"></i> Veille Technologique</a>
-        <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
-      </div>
+<div class="w3-top navbar">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Accueil</a>
+    <a href="BtsSio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BTS SIO</a>
+    <a href="index.html#apropos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> A propos</a>
+    <a href="index.html#projets" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Projets</a>
+    <a href="VeilleTechnologique.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cloud"></i> Veille Technologique</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home"></i> Acceuil</a>
+    <a href="BtsSio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> BTS SIO</a>
+    <a href="index.html#apropos" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> A propos</a>
+    <a href="index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Projets</a>
+    <a href="VeilleTechnologique.html" class="w3-bar-item w3-button " onclick="toggleFunction()"><i class="fa fa-cloud"></i> Veille Technologique</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contact</a>
+  </div>
+</div>
+
+<div style="margin-left: 20px; margin-right: 20px;" class="w3-center"id="Presentation">
+
+    <p class="w3-center">Au cours de mes deux stages j'ai réalisé différents formulaires GLPI.</p>
+    <p class="w3-center">GLPI est ce qui permet de gérer des tickets d'incident et d'avoir un inventaire du parc informatique.</p>
+
+    <br>
+
+    <p class="w3-center">Ici, j'ai réalisé deux types de formulaires :</p>
+    <table>
+      <tr>
+          <td><img src="Images/GLPI/GLPI_accueil.png"  style="width:90%" alt="GLPI"></td>
+          <td>        </td>
+          <td align="center">Formulaire de saisi d'intervention, utile au sein du support informatique afin de rentrer les diverses interventions réalisées afin d'avoir un suivi.
+            <br>Et un formulaire de création de comptes permettant de créér un ticket et l'attribuer à chacune des personnes au sein des différents services en fonction des applications demandées pour la création du compte en question.
+          </td>
+        </tr>
     
-      <!-- Navbar on small screens -->
-      <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
-        <a href="index.html#accueil" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-home"></i> Acceuil</a>
-        <a href="BtsSio.html" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> BTS SIO</a>
-        <a href="index.html#apropos" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-user"></i> A propos</a>
-        <a href="index.html#projets" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-th"></i> Projets</a>
-        <a href="VeilleTechnologique.html" class="w3-bar-item w3-button " onclick="toggleFunction()"><i class="fa fa-cloud"></i> Veille Technologique</a>
-        <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contact</a>
-      </div>
-</div>
-</div>
+      <tr>
+          <td align="center">Formulaire de saisi de l'intervention</td>
+      </tr>
+    
+    </table>
+    <br>
+    <p class="w3-center">Pour se faire il faut créé les questions auxquelles l'utilisitateur répondra, ce qui composera le corps du ticket. 
+      <br>Ensuite, il faut créé les cibles qui permettront d'attribuer le ticket aux différents services nécessaires en fonction des réponses données.</p>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="containerPres w3-padding-64" id="accueilPres" >
-    <div class="w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-            <h1><span id="type"></span></h1>
-        </div>
-    </div>
-</div>
+      <br>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <table>
+        <tr>
+            <td><img src="Images/GLPI/GLPI_cibles_copie.png"  style="width:90%" alt="GLPI"></td>
+            <td>        </td>
+            <td ><img src="Images/GLPI/GLPI_questions_copie.png"  style="width:90%" alt="GLPI"></td>
+          </tr>
+        <tr>
+            <td align="center">Extrait des différentes cibles</td>
+            <td>        </td>
+            <td align="center">Exemple de questions pour la saisi d'intervention</td>
+        </tr>
 
-<script>
-    var typed=new Typed("#type", {
-        strings : ["Formulaire GLPI"],
-        typeSpeed:150,
-        backSpeed:150,
-        loop:true
-    })
-</script>
+      </table>
 
-<div class="w3-content w3-container w3-padding-64" id="Presentation">
-    <h3 class="w3-center">GLPI</h3>
-    <p>Blabla..</p>
+  
 </div>
 
-
+<br><br>
 <!-- Footer -->
-<footer class="w3-center w3-padding-32">
-    <a href="#accueilPres" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de Page</a>
-    <div class="w3-xlarge w3-section lien">
-      <a href="https://www.linkedin.com/in/amandine-jolibois/"><i class="ptitIconf fa fa-linkedin"></i></a>
-      <a href="https://github.com/amandine-jolibois"><i class="ptitIconf fa fa-github"></i></a>
-      <a href="https://www.instagram.com/amanloe.jlb/?next=%2F&hl=fr"><i class="ptitIconf fa fa-instagram"></i></a>
-    </div>
-    <p class="PoweredBy">Réalisé par JOLIBOIS Amandine</p>
-    <p>Copyright © 2023 Tous droits réservés</p>
-  </footer>
+<footer class="w3-center w3-padding-small">
+  <a href="#projets" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de Page</a>
+  <div class="w3-xlarge w3-section lien">
+    <a href="https://www.linkedin.com/in/amandine-jolibois/"><i class="ptitIconf fa fa-linkedin"></i></a>
+    <a href="https://github.com/amandine-jolibois"><i class="ptitIconf fa fa-github"></i></a>
+  </div>
+  <p class="PoweredBy">Réalisé par JOLIBOIS Amandine</p>
+  <p>Copyright © 2023 Tous droits réservés</p>
+</footer>
  
 <script>
 // Modal Image Gallery
@@ -90,7 +114,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + "w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }

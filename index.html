@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Portfolio | Jolibois Amandine</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" href="Images/favicon.ico" type="images/x-icon" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-
+    <title>Portfolio | Jolibois Amandine</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="images/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class=notranslate>
 
 <!-- Navbar (sit on top) -->
-<div class=navBar>
-<div class="w3-top">
+<div class="w3-top navbar">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
     <a href="#accueil" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> Accueil</a>
     <a href="BtsSio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BTS SIO</a>
     <a href="#apropos" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> A propos</a>
@@ -36,244 +36,166 @@
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope"></i> Contact</a>
   </div>
 </div>
-</div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="container" id="accueil" >
+<div class="bgimg-1" id="accueil">
     <h1><span id="type"></span></h1>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <script>
-    var typed=new Typed("#type", {
-        strings : ["JOLIBOIS Amandine", "Bienvenue sur mon portfolio !", "BTS SIO"],
-        typeSpeed:150,
-        backSpeed:150,
-        loop:true
-    })
+  var typed=new Typed("#type", {
+      strings : ["JOLIBOIS Amandine", "Bienvenue sur mon portfolio !", "BTS SIO"],
+      typeSpeed:200,
+      backSpeed:250,
+      loop:true
+  })
 </script>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="apropos">
   <h2 class="w3-center">À propos de moi</h2>
-  <p>Je m'appelle JOLIBOIS Amandine, j'ai 20ans et je suis étudiante en deuxième année de BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métiers) au Lycée Édouard Gand à Amiens (80).</p>
-  <p>Passionnée par l’informatique et les nouvelles technologies, je me suis dirigée tout naturellement vers ces études.</p>
-    <div class="w3-center">
+  <p class="w3-center">Je m'appelle JOLIBOIS Amandine, j'ai 20 ans et je suis étudiante en deuxième année de BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métiers) au Lycée Édouard Gand à Amiens (80).</p>
+  <p class="w3-center">Passionnée par l'informatique et les nouvelles technologies, je me suis dirigée tout naturellement vers ces études.</p>
+  <br>  
+  <div class="w3-center">
       <h3>Mon CV</h3>
       <iframe src="Images/CV_JOLIBOIS_Amandine_Portfolio.pdf" alt="CV" width="500px" height="500px"> </iframe>
+      <br>
+      <button class="btplus w3-button w3-section w3-center" onclick="location.href='Images/CV_JOLIBOIS_Amandine_Portfolio.pdf'"> <i class="fa fa-search"></i> Voir plus</button>
     </div>
-
+<br>
   <h2 class="w3-center">Compétences Informatique</h2>
-  <p class="w3-wide"></i>Python</p>
+  <p style="font-size: larger;"></i>Python</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-padding-small w3-round-xlarge couleur w3-center" style="width:80%">80%</div>
   </div>
-  <p class="w3-wide">C#</p>
+  <p style="font-size: larger;">C#</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-padding-small w3-round-xlarge couleur w3-center" style="width:80%">80%</div>
   </div>
-  <p class="w3-wide">SQL</p>
+  <p style="font-size: larger;">SQL</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-padding-small w3-round-xlarge couleur w3-center" style="width:75%">75%</div>
   </div>
-  <p class="w3-wide"></i>HTML</p>
+  <p style="font-size: larger;"></i>HTML</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-padding-small w3-round-xlarge couleur w3-center" style="width:70%">70%</div>
   </div>
-  <p class="w3-wide"></i>PHP</p>
+  <p style="font-size: larger;"></i>PHP</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-padding-small w3-round-xlarge couleur w3-center" style="width:50%">50%</div>
   </div>
-  <p class="w3-wide"></i>Javascript</p>
+  <p style="font-size: larger;"></i>Javascript</p>
   <div class="w3-light-grey w3-round-xlarge w3-small">
     <div class="w3-container w3-padding-small w3-round-xlarge couleur w3-center" style="width:30%">30%</div>
   </div>
 </div>
 
-<!-- Bande
-<div class="w3-row w3-center couleurBande w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
-  </div>
-</div>
--->
-
-<!-- Container Portfolio Section -->
+<!-- Second Parallax Image with Portfolio Text -->
 <div class="w3-padding-64">
   <div class="BandeProjets w3-display-container w3-opacity-min" id="projets">
     <div class="w3-display-middle">
       <span class="w3-xxlarge w3-text-white w3-wide w3-center">Projets</span>
     </div>
 </div>
-<br>
+<br><br>
+
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="imgProjets">
     <div class="w3-content w3-container">
-    <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <img src="Images/SnifferMac/Sniffer_accueil.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Sniffer d'adresses MAC">
-        <a href="SnifferMac.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/AppCoach/AppCoach_accueil.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="AppCoach">
-        <a href="AppCoach.html">
-          <button>
-            <span class="circle" aria-hidden="true">
-              <span class="arrow_icon"></span>
-            </span>
-            <span class="button_text">En savoir plus</span>
-          </button>
-        </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/Sio_banque/Sio_banque_accueil.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="SIO Banque">
-        <a href="SioBanque.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/GLPI/GLPI_accueil.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Formulaire GLPI">
-        <a href="GLPI.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/SnifferMac/Sniffer_accueil.png" style="width:100%" onclick="location.href='SnifferMac.html'" alt="Sniffer d'adresses MAC">
+      <div class="texte-hover">
+        <div class="texte-original">Sniffer d'adresses MAC</div>
+       </div>
     </div>
 
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="Images/Lafleur/Lafleur_acceuil.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Lafleur">
-        <a href="Lafleur.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Cas France Mobilier">
-        <a href="FranceMobilier.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="La Sauvegarde Informatique">
-        <a href="Sauvegarde.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Puissance 4">
-        <a href="Puissance4.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
-
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/AppCoach/AppCoach_accueil - Copie.png" style="width:100%" onclick="location.href='AppCoach.html'" alt="AppCoach">
+      <div class="texte-hover">
+        <div class="texte-original">AppCoach</div>
+       </div>
     </div>
-    <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="R3st0Web">
-        <a href="RestoWeb.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
 
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Docker">
-        <a href="Docker.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/Sio_banque/Sio_banque_accueil.png" style="width:100%" onclick="location.href='SioBanque.html'" alt="SIO Banque">
+      <div class="texte-hover">
+        <div class="texte-original">SIO Banque</div>
+       </div>
+    </div>
 
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Linux Apache MySQL">
-        <a href="LinuxApache.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-      </a>
-      </div>
-
-      <div class="w3-col m3">
-        <img src="Images/Remplace.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity cover" alt="Gestion de Projet">
-        <a href="GestionProjet.html">
-        <button>
-          <span class="circle" aria-hidden="true">
-            <span class="arrow_icon"></span>
-          </span>
-          <span class="button_text">En savoir plus</span>
-        </button>
-        </a>
-      </div>
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/GLPI/GLPI_accueil_copie.png" style="width:100%" onclick="location.href='GLPI.html'" alt="Formulaire GLPI">
+      <div class="texte-hover">
+        <div class="texte-original">GLPI</div>
+       </div>
     </div>
   </div>
+
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/RestoWeb/RestoWebAccueil.png" style="width:100%" onclick="location.href='RestoWeb.html'" alt="R3st0Web">
+      <div class="texte-hover">
+        <div class="texte-original">RestoWeb</div>
+       </div>
+    </div>
+
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/Docker/docker.png" style="width:100%" onclick="location.href='Docker.html'" alt="Docker">
+      <div class="texte-hover">
+        <div class="texte-original">Docker</div>
+       </div>
+    </div>
+
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/SioShop/SioShop_Accueil.png" style="width:100%" onclick="location.href='SioShop.html'" alt="SIO Shop">
+      <div class="texte-hover">
+        <div class="texte-original">SIO Shop</div>
+       </div>
+    </div>
+
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/GestionProjet/Gestionprojet_trello$.png" style="width:100%" onclick="location.href='GestionProjet.html'" alt="Gestion de Projet">
+      <div class="texte-hover">
+        <div class="texte-original">Gestion de projet</div>
+       </div>
+    </div>
   </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/Lafleur/Lafleur_acceuil.png" style="width:100%" onclick="location.href='Lafleur.html'" alt="Lafleur">
+      <div class="texte-hover">
+        <div class="texte-original">LaFleur</div>
+       </div>
+    </div>
+
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover"  src="Images/FranceMobilier/fm_accueil.png" style="width:100%" onclick="location.href='FranceMobilier.html'" alt="Cas France Mobilier">
+      <div class="texte-hover">
+        <div class="texte-original">FranceMobilier</div>
+       </div>
+    </div>
+
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/Sauvegarde/cobian-capture.jpg" style="width:100%" onclick="location.href='Sauvegarde.html'" alt="La Sauvegarde Informatique">
+      <div class="texte-hover">
+        <div class="texte-original">La sauvegarde</div>
+       </div>
+    </div>
+
+    <div class="w3-col m3 superposition-simple">
+      <img class="image-originale w3-hover-opacity cover" src="Images/Puissance4/Puissance4_accueil.png" style="width:100%" onclick="location.href='Puissance4.html'" alt="Puissance 4">
+      <div class="texte-hover">
+        <div class="texte-original">Puissance4</div>
+       </div>
+    </div>
+  </div>
+</div>
+</div>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -288,6 +210,8 @@
 <div class="w3-center">
   <h3>Tableau de synthèse</h3>
   <iframe src="Images/Tableau_synthese .pdf" alt="Tableau synthèse" width="500" height="300"> </iframe>
+  <br>
+  <button class="btplus w3-button w3-section w3-center" onclick="location.href='Images/Tableau_synthese .pdf'"> <i class="fa fa-search"></i> Voir plus</button>
 </div>
 
 <!-- Container Contact Section -->
@@ -318,21 +242,21 @@
         <p>   </p>
         <input class="w3-input w3-border" type="text" placeholder="Message*" required name="Message">
         <p>* Champs obligatoires</p>
-        <button class="btenvoyer w3-button w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> Envoyer
-        </button>
       </form>
+      <a href="Envoyer.html"><button class="btenvoyer w3-button w3-right w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> Envoyer
+      </button></a>
     </div>
   </div>
 </div>
+</div>
 
 <!-- Footer -->
-<footer class="w3-center w3-padding-32">
+<footer class="w3-center w3-padding-small">
   <a href="#accueil" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>Haut de Page</a>
   <div class="w3-xlarge w3-section lien">
     <a href="https://www.linkedin.com/in/amandine-jolibois/"><i class="ptitIconf fa fa-linkedin"></i></a>
     <a href="https://github.com/amandine-jolibois"><i class="ptitIconf fa fa-github"></i></a>
-    <a href="https://www.instagram.com/amanloe.jlb/?next=%2F&hl=fr"><i class="ptitIconf fa fa-instagram"></i></a>
   </div>
   <p class="PoweredBy">Réalisé par JOLIBOIS Amandine</p>
   <p>Copyright © 2023 Tous droits réservés</p>
@@ -352,7 +276,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + "w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
@@ -367,6 +291,7 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
 </script>
 
 </body>
